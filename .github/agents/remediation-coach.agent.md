@@ -24,10 +24,11 @@ Convert confirmed findings into minimal, review-friendly patch suggestions and v
 ## Procedure
 
 1. Read the finding and evidence.
-2. Suggest a minimal patch strategy.
-3. If apply mode is requested, apply the smallest safe edit set and capture rollback notes.
-4. Provide post-fix checks tied to the mapped control IDs.
-5. Call out residual risk.
+2. Use `secure-patch-suggestion` skill for minimal patch planning.
+3. If apply mode is requested, use `runtime-remediation` skill to apply the smallest safe edit set and capture rollback notes.
+4. Provide post-fix checks tied to mapped control IDs from `docs/appsec-demo/appsec-baseline-standard.md`.
+5. Use `remediation-validation` skill to report resolved, partially resolved, or unresolved status.
+6. Call out residual risk.
 
 ## Output Format
 

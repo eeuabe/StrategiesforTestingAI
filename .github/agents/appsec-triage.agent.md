@@ -22,11 +22,12 @@ Produce a high-confidence, evidence-backed list of security findings and priorit
 
 ## Procedure
 
-1. Inspect the requested scope for vulnerability patterns.
-2. Map each finding to controls in `docs/appsec-demo/appsec-baseline-standard.md`.
-3. Assign severity based on exploitability and likely impact.
-4. Flag uncertain items as "Needs verification".
-5. Return a prioritized fix queue.
+1. Use `vulnerability-discovery` skill for initial scan and finding structure.
+2. Inspect the requested scope for vulnerability patterns.
+3. Map each finding to controls in `docs/appsec-demo/appsec-baseline-standard.md`.
+4. Assign severity based on exploitability and likely impact.
+5. Flag uncertain items as "Needs verification".
+6. Return a prioritized fix queue.
 
 ## Output Format
 

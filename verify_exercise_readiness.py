@@ -80,7 +80,7 @@ def collect_checks(smoke: bool) -> list[CheckResult]:
 
     # Exercise docs
     for i in range(1, 10):
-        checks.append(exists_check(f"Exercise-{i}.md exists", ROOT / "docs" / f"Exercise-{i}.md"))
+        checks.append(exists_check(f"Exercise-{i}.md exists", ROOT / "docs" / "exercises" / f"Exercise-{i}.md"))
 
     # Precomputed artifacts expected for shortened labs
     checks.append(glob_check("Exercise 3 regression snapshot", "artifacts/precomputed/exercise3/regression_results_*.json"))

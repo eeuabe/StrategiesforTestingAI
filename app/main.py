@@ -25,12 +25,13 @@ app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 CORS(app)
 
 DOCS_DIR = Path(os.path.dirname(os.path.dirname(__file__))) / 'docs'
+EXERCISE_DOCS_DIR = DOCS_DIR / 'exercises'
 
 EXERCISE_CATALOG = [
     {
         'number': i,
-        'student_file': DOCS_DIR / f'Exercise-{i}.md',
-        'instructor_file': DOCS_DIR / f'Exercise-{i}-Instructor-Notes.md',
+        'student_file': EXERCISE_DOCS_DIR / f'Exercise-{i}.md',
+        'instructor_file': EXERCISE_DOCS_DIR / f'Exercise-{i}-Instructor-Notes.md',
         'student_title': f'Exercise {i}',
         'instructor_title': f'Exercise {i} Instructor Notes',
     }

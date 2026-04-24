@@ -11,8 +11,9 @@ The application is intentionally configured with realistic failure modes so stud
 
 ## Course Flow
 
-- Student exercises: `docs/Exercise-1.md` to `docs/Exercise-9.md`
-- Instructor notes: `docs/Exercise-1-Instructor-Notes.md` to `docs/Exercise-9-Instructor-Notes.md`
+- Student exercises: `docs/exercises/Exercise-1.md` to `docs/exercises/Exercise-9.md`
+- Instructor notes: `docs/exercises/Exercise-1-Instructor-Notes.md` to `docs/exercises/Exercise-9-Instructor-Notes.md`
+- AppSec demo materials: `docs/appsec-demo/`
 - Section transition deck text: `docs/Section-Bridge-RAG-to-Agentic.md`
 - Course pacing guide: `docs/Course-Schedule.md`
 
@@ -148,9 +149,14 @@ TestingAITutorial/
 │   ├── __init__.py         # Package initialization
 │   ├── regression_testing.py       # Core framework
 │   └── config.json         # Configurable thresholds and settings
-├── docs/                   # Course materials and instructor notes
-│   ├── Exercise-1.md ... Exercise-9.md
-│   ├── Exercise-1-Instructor-Notes.md ... Exercise-9-Instructor-Notes.md
+├── docs/                   # Course materials and demo docs
+│   ├── exercises/
+│   │   ├── Exercise-1.md ... Exercise-9.md
+│   │   └── Exercise-1-Instructor-Notes.md ... Exercise-9-Instructor-Notes.md
+│   ├── appsec-demo/
+│   │   ├── appsec-agent-demo-runbook.md
+│   │   ├── appsec-baseline-standard.md
+│   │   └── appsec-speaker-cheat-sheet.md
 │   ├── Section-Bridge-RAG-to-Agentic.md
 ├── section7_nfr_quickrun.py # Exercise 7 automation artifact generator
 ├── section9_agentic_test_suite.py # Exercise 9 CI-style artifact generator

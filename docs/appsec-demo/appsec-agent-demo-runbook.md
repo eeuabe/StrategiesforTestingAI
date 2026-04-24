@@ -18,6 +18,8 @@ Show how custom agents and skills can:
 - Customization files present under `.github/`
 - Baseline standard available at `docs/appsec-demo/appsec-baseline-standard.md`
 - Speaker cue card available at `docs/appsec-demo/appsec-speaker-cheat-sheet.md`
+- Step-by-step presenter script available at `docs/appsec-demo/appsec-live-demo-script.md`
+- One-page presenter guide available at `docs/appsec-demo/appsec-live-demo-one-page.md`
 
 ## Invocation Best Practice
 
@@ -27,6 +29,7 @@ Use explicit invocation in live demos to reduce routing drift:
 2. If your client supports explicit invocation syntax, use it (for example `@AgentName` or slash invocation) instead of name-only wording.
 3. Invoke skills explicitly when needed (`/vulnerability-discovery`, `/secure-patch-suggestion`, `/runtime-remediation`, `/remediation-validation`).
 4. Avoid relying on plain text such as "use agent X" as the only routing signal.
+5. Keep chat in Ask mode for suggestion-only prompts; switch to Agent mode (or your client's custom agent mode) before apply-mode remediation.
 
 Optional scripted workflow:
 
@@ -62,6 +65,10 @@ Expected output shape:
 Prompt example:
 
 "[Agent selected: Remediation Coach Agent] Run /secure-patch-suggestion for findings F-001 and F-003. Provide minimal patch suggestions with validation and rollback notes."
+
+Presenter action before apply-mode prompt:
+
+Switch chat mode from Ask to Agent (or your client's custom agent mode) while keeping `Remediation Coach Agent` selected.
 
 Apply-mode prompt example:
 

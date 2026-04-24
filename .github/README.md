@@ -34,6 +34,8 @@ Scripted option for live runtime edits:
 Speaker support:
 
 - `docs/appsec-demo/appsec-speaker-cheat-sheet.md`
+- `docs/appsec-demo/appsec-live-demo-script.md`
+- `docs/appsec-demo/appsec-live-demo-one-page.md`
 
 ## Notes
 

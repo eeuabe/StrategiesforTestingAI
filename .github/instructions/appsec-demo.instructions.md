@@ -13,6 +13,8 @@ Apply these rules when analyzing security posture or generating remediation guid
 
 - Prefer explicit agent selection over implicit name matching.
 - Prefer explicit skill invocation over passive inference.
+- For suggestion-only steps, keep Copilot chat in Ask mode.
+- For runtime edit application or auto-generated diffs, switch chat mode to Agent (or your custom agent mode in clients that separate mode and agent picker).
 - In demos, use:
 	- `AppSec Triage Agent` + `/vulnerability-discovery` for discovery.
 	- `Remediation Coach Agent` + `/secure-patch-suggestion` for suggestion mode.
@@ -43,6 +45,7 @@ For each finding, include:
 - Prefer minimal edits with clear rollback path.
 - Avoid broad refactors in demo outputs.
 - Include risk tradeoffs if a recommendation changes behavior.
+- In live demos, narrate mode switches out loud so the audience can distinguish planning mode (Ask) from change mode (Agent).
 
 ## Evidence rule
 
